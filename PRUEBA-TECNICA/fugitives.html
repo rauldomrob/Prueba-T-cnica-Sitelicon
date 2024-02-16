@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="home">
+                <div class="home_link">
+                    <a href="fugitives.html" class="homeLink">HOME</a>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_link">
+                    <a href="about.html">ABOUT ME</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="filtros">
+                <form id="filtroForm" class="filtroForm">
+                    <div class="filtros1">
+                        <div class="sexo">
+                            <label>Gender:</label>
+                            <select name="sex" id="sex">
+                                <option value="">Any</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>
+
+                        <div class="pelo">
+                            <label>Hair color:</label>
+                            <input type="text" id="hair" name="hair" placeholder="Example: Brown" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="filtros2">
+                        <div class="ojos">
+                            <label>Eye color:</label>
+                            <input type="text" id="eyes" name="eyes" placeholder="Example: Blue" autocomplete="off">
+                        </div>
+
+                        <div class="boton_filtrar">
+                            <button type="submit">Filter</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+            <div class="fugitivos_paginacion">
+                <div id="contenedor"></div>
+                <div id="paginacion"></div>
+            </div>
+
+        </main>
+
+        <div class="todo_detalles_fugitivo">
+            <button id="visibilidad"></button>
+        </div>
+
+        <footer>
+            <div class="logo">
+                <div class="logo_img">
+                    <img src="ASSETS/logo-sin-fondo.png" alt="Sitelicon">
+                </div>
+            </div>
+            <div class="links">
+                <div class="home_link_footer">
+                    <a href="fugitives.html" class="homeLink">Home</a>
+                </div>
+                <div class="about_link_footer">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nombre">
+                <div class="nombre_completo">
+                    <div class="solo_nombre">
+                        Raúl
+                    </div>
+                    <div class="apellidos">
+                        <div class="apellido1">Domínguez</div>
+                        <div class="apellido2">Robles</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

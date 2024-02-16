@@ -1,0 +1,725 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    min-width: 240px;
+    font-size: 28px;
+    padding: 10px;
+    background-color: #f1a532;
+    border-bottom: solid 3px #161305;
+    height: 75px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover,
+header a:active {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.816);
+    text-decoration: underline;
+}
+
+.home {
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    width: 45%;
+}
+
+.home_link,
+.about_link {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    min-width: 240px;
+    width: 100%;
+    justify-content: space-around;
+    border-top: solid 3px #eccd5c;
+}
+
+.todo_sobre_mi {
+    background-color: #f7e7ac;
+    height: 80vh;
+}
+
+.logo,
+.links,
+.nombre {
+    width: 32%;
+    max-width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_img img {
+    display: block;
+    width: 85%;
+    max-width: 440px;
+}
+
+.links a {
+    font-size: 22px;
+    color: #f49c1c;
+    font-weight: bold;
+}
+
+.links a:hover,
+.links a:active {
+    text-shadow: 1px 1px 8px #f49c1c;
+    text-decoration: underline;
+}
+
+.home_link_footer {
+    margin-right: 12px;
+}
+
+.about_link_footer {
+    margin-left: 12px;
+}
+
+.nombre_completo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.solo_nombre {
+    margin-right: 7px;
+}
+
+.apellidos {
+    display: flex;
+}
+
+.apellido1 {
+    margin-right: 7px;
+}
+
+.filtros {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 240px;
+    background-color: #f7e7ac;
+    padding-top: 15px;
+}
+
+.filtroForm {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.filtros1,
+.filtros2 {
+    display: flex;
+}
+
+.pelo,
+.ojos,
+.sexo {
+    padding: 0 17px;
+    font-size: 19px;
+    height: 28px;
+}
+
+.filtroForm input,
+.filtroForm select {
+    margin-left: 5px;
+    outline: none;
+    padding: 3px 4px;
+    border: 1px solid #161305;
+    border-radius: 3px;
+    color: #161305;
+    font-weight: 700;
+}
+
+.filtroForm select option {
+    color: #161305;
+    font-weight: 700;
+}
+
+.sexo,
+.pelo {
+    border-right: solid 2px #eccd5c;
+}
+
+.filtroForm button {
+    padding: 2px 7px;
+    font-size: 16px;
+    border: 2px solid #f1a532;
+    border-radius: 3px;
+    color: white;
+    background-color: #f1a532;
+}
+
+.filtroForm button:hover,
+.filtroForm button:active {
+    cursor: pointer;
+    transition: background-color 0.45s, color 0.45s, border 0.45s;
+    border: 2px solid #161305;
+    background-color: #f1a532;
+    color: #161305;
+}
+
+.fugitivos_paginacion {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7e7ac;
+    min-height: 82vh;
+    min-width: 240px;
+}
+
+#contenedor {
+    display: grid;
+    width: 80%;
+    height: fit-content;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 0 0;
+}
+
+#paginacion {
+    display: flex;
+    padding: 20px;
+}
+
+.foto {
+    position: relative;
+}
+
+.foto img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    min-height: 128px;
+}
+
+.fugitivo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: blue;
+    padding-top: 20px;
+    min-width: 166px;
+    border-radius: 7px;
+    border: 2px solid #f1a532;
+    background-color: #eccd5c;
+}
+
+.fugitivo:hover,
+.fugitivo:active {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 6px black;
+
+}
+
+.titulo_fugitivo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido_titulo_fugitivo {
+    text-align: center;
+}
+
+.fugitivo img {
+    display: block;
+    max-width: 90%;
+    border: #755006 solid 2px;
+    border-radius: 3px;
+}
+
+.contenido_titulo_fugitivo {
+    padding: 7px 6px 8px;
+}
+
+#paginacion {
+    background-color: #f7e7ac;
+}
+
+#paginacion button,
+#paginacion div {
+    margin: 0 3px;
+}
+
+.divMore {
+    padding-top: 14.5px;
+    font-size: 20px;
+}
+
+#paginacion button {
+    padding: 5px 8px;
+    background-color: white;
+    border: 2px solid #f1a532;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.todo_detalles_fugitivo {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7e7ac;
+    min-height: 82vh;
+}
+
+#visibilidad {
+    position: absolute;
+    top: 85px;
+    left: 12px;
+    background-image: url(ASSETS/atras.png);
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    padding: 20px 15px;
+    width: 80%;
+    height: 100%;
+}
+
+.arriba,
+.medio,
+.abajo {
+    height: 32.5%;
+    width: 100%;
+    min-height: 32.5vh;
+    background-color: aquamarine;
+    min-width: 232px;
+}
+
+.arriba {
+    display: flex;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #f1a532;
+    border-bottom: none;
+    background-color: #eccd5c;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.imagen_principal {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    min-width: 175px;
+    margin-left: 10px;
+}
+
+.imagen_principal img {
+    display: block;
+    max-width: 200px;
+    min-width: 175px;
+    max-height: 100%;
+    height: 100%;
+    border: #755006 solid 2px;
+    border-radius: 3px;
+}
+
+.datos_importantes {
+    width: fit-content;
+    height: 100%;
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 7px;
+    background-color: #f7e7ac;
+    border-radius: 5px;
+}
+
+.datos_importantes>div {
+    padding: 4px;
+}
+
+.title {
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
+}
+
+.medio {
+    background-color: green;
+    padding: 20px 20px 35px;
+    font-size: 19px;
+    min-height: fit-content;
+    height: fit-content;
+    text-align: justify;
+    border: 2px solid #f1a532;
+    border-bottom: none;
+    border-top: none;
+    background-color: #eccd5c;
+}
+
+.titulo_medio {
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 7px;
+}
+
+.info_medio {
+    padding: 7px;
+    background-color: #f7e7ac;
+    border-radius: 5px;
+}
+
+.medio>.info_medio>p>a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.abajo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 2px solid #f1a532;
+    border-top: none;
+    background-color: #eccd5c;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.abajo>.imagenes {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 175px;
+    margin: 15px 10px;
+}
+
+.abajo>.imagenes>img {
+    display: block;
+    max-width: 170px;
+    max-height: 100%;
+    height: 100%;
+    border: #755006 solid 2px;
+    border-radius: 3px;
+}
+
+.todo_sobre_mi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    min-height: 79vh;
+}
+
+.sobre_mi {
+    width: 75%;
+    margin-top: 60px;
+}
+
+.sobre_mi_titulo {
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.sobre_mi_texto {
+    font-size: 21px;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+@media(max-width: 950px) {
+    .abajo>.imagenes {
+        width: 40%;
+    }
+
+    .logo_img img {
+        min-width: 252px;
+    }
+
+    #contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 15px;
+    }
+
+    .nombre_completo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sexo,
+    .ojos,
+    .pelo {
+        padding: 0 12px;
+        font-size: 18px;
+        height: 28px;
+    }
+
+    .arriba {
+        flex-direction: column;
+    }
+
+    .datos_importantes {
+        margin: 0;
+    }
+
+    .imagen_principal {
+        margin-bottom: 15px;
+    }
+
+    .datos {
+        padding-top: 80px;
+        width: 90%;
+    }
+}
+
+@media(max-width: 850px) {
+    .filtros {
+        height: 100px;
+    }
+
+    .filtroForm {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .filtros1,
+    .filtros2 {
+        padding: 10px 0;
+    }
+
+    .pelo {
+        border: none;
+    }
+
+    .ojos {
+        border-right: solid 2px #eccd5c;
+    }
+
+    .ojos {
+        padding-right: 60px;
+        padding-left: 0;
+    }
+
+    .filtroForm button {
+        margin-left: 60px;
+    }
+}
+
+@media(max-width: 715px) {
+    #contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nombre_completo {
+        font-size: 17.5px;
+    }
+
+    footer {
+        min-height: 100px;
+    }
+
+    .apellidos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .home_link_footer,
+    .about_link_footer {
+        margin: 3px 0;
+    }
+
+    .logo {
+        margin-left: 12px;
+    }
+
+    .datos_importantes {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 488px) {
+    #contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foto img {
+        max-width: 80%;
+    }
+
+    .logo,
+    .links,
+    .nombre {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .apellidos {
+        flex-direction: row;
+    }
+
+    .links {
+        flex-direction: row;
+    }
+
+    .home_link_footer {
+        margin-right: 12px;
+    }
+
+    .about_link_footer {
+        margin-left: 12px;
+    }
+
+    .logo {
+        margin: 7px 0 0;
+        border-bottom: rgba(0, 0, 0, 0.771) solid 2px;
+    }
+
+    .links {
+        padding: 10px 0 20px;
+        border-bottom: rgba(0, 0, 0, 0.771) solid 2px;
+    }
+
+    .logo_img img {
+        margin: auto;
+    }
+
+    .nombre {
+        padding: 5px 0 10px;
+    }
+
+    .filtros1,
+    .filtros2 {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 275px;
+    }
+
+    .sexo,
+    .ojos,
+    .pelo {
+        border: none;
+        padding: 0;
+    }
+
+    .boton_filtrar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filtroForm button {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .filtros {
+        height: 140px;
+    }
+
+    #eyes {
+        margin-left: 9px;
+    }
+
+    #sex {
+        margin-left: 25px;
+    }
+
+    .home,
+    .about {
+        justify-content: center;
+    }
+
+    .home_link a,
+    .about_link a {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    header {
+        height: 70px;
+    }
+}
+
+@media(max-width: 350px) {
+    #contenedor {
+        font-size: 13.5px;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .filtros1,
+    .filtros2,
+    .ojos,
+    .pelo {
+        width: 100%;
+    }
+
+    #eyes,
+    #hair {
+        width: 60%;
+    }
+
+    .filtros1,
+    .filtros2 {
+        padding-left: 13px;
+    }
+}
